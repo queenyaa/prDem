@@ -63,7 +63,7 @@ unsigned int convert_X(va_list args, buffer_t *output,
 	char *lead = "0X";
 
 	if (len == LONG)
-		num = va_arg(args, unsigned long);
+		num = va_arg(args, unsigned long int);
 	else
 		num = va_arg(args, unsigned int);
 	if (len == SHORT)
